@@ -22,7 +22,7 @@ const totalBatteries = () => {
     return initialState += item
   }, 0)
   
-  return totalCount
+  console.log(totalCount)
 }
 
 const wordCountMap = () => {
