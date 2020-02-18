@@ -22,8 +22,7 @@ const totalBatteries = batteryBatches.reduce((initialState, item) => {
   }, 0)
   
 
-const wordCountMap = () => {
-  return monologueLines.reduce((initialState, word) => {
+const wordCountMap = monologueLines.reduce((initialState, word) => {
     let wordCount = word.split(" ").length
     if (initialState[wordCount]) {
       initialState[wordCount] = initialState[wordCount] += 1
