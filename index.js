@@ -23,7 +23,7 @@ const totalBatteries = () => {
   }, 0)
 }
 
-const wodCount = () => {
+const wordCount = () => {
   return monologueLines.reduce((initialState, word) => {
     wordCount = word.split(" ").length
     if (initialState[wordCount]) {
