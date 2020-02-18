@@ -23,7 +23,7 @@ const totalBatteries = () => {
   }, 0)
 }
 
-const wordCount = () => {
+const wordCountMap = () => {
   return monologueLines.reduce((initialState, word) => {
     let wordCount = word.split(" ").length
     if (initialState[wordCount]) {
@@ -36,4 +36,4 @@ const wordCount = () => {
 }
 
 console.log(totalBatteries())
-console.log(wordCount())
+console.log(wordCountMap())
