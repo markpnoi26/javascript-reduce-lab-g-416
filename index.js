@@ -17,13 +17,10 @@ const monologueLines = [
   'I am the one who knocks!'
 ];
 
-const totalBatteries = () => {
-  let totalCount = batteryBatches.reduce((initialState, item) => {
+const totalBatteries = batteryBatches.reduce((initialState, item) => {
     return initialState += item
   }, 0)
   
-  console.log(totalCount)
-}
 
 const wordCountMap = () => {
   return monologueLines.reduce((initialState, word) => {
