@@ -24,7 +24,16 @@ const totalBatteries = () => {
 }
 
 const wodCount = () => {
-  return monologue
+  return monologueLines.reduce((initialState, word) => {
+    wordCount = word.split(" ").length
+    if (initialState[wordCount]) {
+      initialState[wordCount] = initialState[wordCount] += 1
+    } else {
+      initialState[wordCount] = 1
+    }
+    return initialState
+  }, {})
 }
 
 console.log(totalBatteries())
+console.log(wordCount())
